@@ -422,3 +422,10 @@ td,
 th {
   padding: 0;
 }
+@font-face {
+  font-family: 'ClanOT-News';
+  src: url('../fonts/ClanOT-News.eot?#iefix') format('embedded-opentype'),  url('../fonts/ClanOT-News.otf')  format('opentype'),
+       url('../fonts/ClanOT-News.woff') format('woff'), url('../fonts/ClanOT-News.ttf')  format('truetype'), url('../fonts/ClanOT-News.svg#ClanOT-News') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
