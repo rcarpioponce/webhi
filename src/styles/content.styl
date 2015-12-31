@@ -92,26 +92,47 @@ figure
     max-width 90%
     height auto
 
-@media (min-width: 786px)
-  .container
-    width 768px
-    margin 0 auto
-
-  .content
-    &-features
-      .container
-        display flex
-        justify-content space-between
-
-    &-text
-      &-image
-        .container
-          display flex
-
-          picture
-            margin 1em
-            order 1
-            width 30%
-          p
-            order 2
-            width 70%
+@media (max-width: 600px)
+  .header-logo
+    figure
+      text-align center
+  .info_top
+    width 100%
+    display flex
+    flex-direction row
+    justify-content space-around
+    .info
+      margin 0
+      display flex-end
+      justify-content right
+      padding-right 0
+      padding-left 28px
+      &:last-child
+        padding-right 0
+      i
+        left -10px          
+  .right_header
+    img
+      display none
+  .servicio
+    h1
+      left 8%
+      font-size 16px
+    strong
+      left 8%
+      top 60%
+      font-size 8.5px
+    p
+      left 8%
+      top 64%
+      font-size 7.5px
+      width 160px
+      
+@media (max-width: 320px)
+  .info_top
+    .info
+      &:first-child
+        display none
+    
+    
+    

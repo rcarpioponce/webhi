@@ -24,7 +24,8 @@
       max-width 50%
       display flex
       justify-content center
-      align-items center      
+      align-items center
+      transition color ease-in-out      
       &:hover
         color $amarillo
         border-color $amarillo
@@ -35,5 +36,28 @@
   float left
   clear both
   position relative
-       
-      
+@media (max-width:600px)
+  .header
+    padding-top 20px
+    flex-direction column
+    .right_header
+      width 100%
+    nav
+     ul
+       width 100%
+       flex-direction column
+       li
+         width 100%
+         margin-bottom 0
+         text-align center
+         a
+           width 100%
+           max-width 100%
+           border 0
+           color white
+           text-align center
+           background-color $black
+           padding 0
+           &:hover
+            background-color $amarillo
+            color $black 

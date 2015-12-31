@@ -81,6 +81,7 @@ gulp.task('inline', function() {
     .pipe(gulp.dest('./dist'));
 });
 
-gulp.task('build', ['build:css', 'build:js', 'images', 'inline']);
+gulp.task('build', ['build:css', 'build:js', 'inline']);
+//gulp.task('build', ['build:css', 'build:js', 'images', 'inline']);
 
 gulp.task('default', ['server', 'watch', 'build']);
