@@ -1,0 +1,114 @@
+doctype html
+html(lang='es')
+  head
+    meta(charset='UTF-8')
+    title Help Innova - Inicio
+    meta(name='viewport', content='width=device-width,initial-scale=1')
+    // smoosh
+    link(rel='stylesheet', href='./css/main.css')
+    // endsmoosh
+  body
+    .barra_top
+      .info_top
+        .info
+          i.icon-help-correo
+          |  info@helpinnova.com
+        .info
+          i.icon-help-celular
+          |  (01) 993 025 543
+        .info
+          i.icon-help-ubicacion
+          |  General Borgoño 120 Int. 706 – Pueblo Libre
+    header.header
+      h1.header-logo
+        figure
+          a(href='/helpinnova/build/')
+            img(src='img/logo.jpg', width='131', alt='helpinnova')
+      .right_header
+        nav.header-menu-navbar
+          ul#navbarMenu.header-menu-list
+            li.header-menu-list-item
+              a(href='#') IDENTIDAD CORPORATIVA
+            li.header-menu-list-item
+              a(href='#') POR QUÉ UNA ASESORÍA?
+            li.header-menu-list-item
+              a(href='#') DIAGNOSTICO EMPRESARIAL
+            li.header-menu-list-item
+              a(href='#') CLIENTES
+            li.header-menu-list-item
+              a(href='#') CONTACTANOS
+        block content
+    section.linea_amarilla
+    section#servicios.container-fluid
+      section.servicio
+        .amarillo
+          figure
+            img(src='img/Archivero.png', width='542', alt='Estructura y Organización Empresarial')
+          article
+            h1
+              | ESTRUCTURA 
+              br
+              | Y ORGANIZACIÓN EMPRESARIAL
+            strong Mapeo de procesos
+            p
+              | " Mediante la consultaría de procesos y calidad, se busca conocer los procesos de negocio, los cuales estarán encaminados al objetivo establecido en la visión de la organización. "
+      section.servicio
+        .amarillo
+          figure
+            img(src='img/Anuncio2.png', width='542', alt='Marketing & Publicidad')
+          article
+            h1
+              | MARKETING
+              br
+              | & PUBLICIDAD
+            strong Rentabilidad e inversión en los negocios
+            p
+              | " Mediante la consultoría de contabilidad y finanzas, se busca tener la información financiera de la empresa en el momento oportuno para la toma de decisiones. "
+      section.servicio
+        .amarillo
+          figure
+            img(src='img/Abaco.png', width='542', alt='Marketing & Publicidad')
+          article
+            h1
+              | CONTABILIDAD
+              br
+              | Y FINANZAS
+            strong Creatividad y estrategia
+            p
+              | " Mediante la consultoría de marketing y publicidad se busca definir claramente la estrategia de comunicación y comercial de toda empresa para el logro de sus objetivos como organización. "
+      section.servicio
+        .amarillo
+          figure
+            img(src='img/Mazo.png', width='542', alt='Marketing & Publicidad')
+          article
+            h1 LEGAL
+            strong La prevención como valor legal en los negocios
+            p
+              | " Mediante el asesoramiento legal se generan las contingencias propias de la empresa, volviendo más eficiente el capital económico. "
+    section#banner_inferior
+      img(src='img/bannerinferior.png')
+    footer.footer
+      nav.socialnetwork
+        ul
+          li
+            a.icon-help-facebook(href='')
+          li
+            a.icon-help-twitter(href='')
+          li
+            a.icon-help-linkedin(href='')
+      .barra_top
+        .info_top
+          .info
+            i.icon-help-correo
+            |  info@helpinnova.com
+          .info
+            i.icon-help-celular
+            |  (01) 993 025 543
+          .info
+            i.icon-help-ubicacion
+            |  General Borgoño 120 Int. 706 – Pueblo Libre
+    script(src='https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js')
+    // smoosh
+    script(src='./js/bundle.js')
+    script(src='./js/cycle2.min.js')
+    // endsmoosh
