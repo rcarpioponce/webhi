@@ -35,4 +35,37 @@
 		font-size 38px
 		left -40px
 		top 2px
-		position absolute		
+		position absolute
+.socialnetwork
+	ul
+		list-style none
+		display flex
+		flex-direction row
+		justify-content center
+		li
+			a
+				font-size 36px
+				color $amarillo
+				line-height 45px
+.banner_inferior
+	content url('../img/bannerinferior.png')
+@media (max-width:768px)
+	.banner_inferior
+		content url('../img/frase768x236.png')
+@media (max-width:600px)
+	footer
+		.socialnetwork
+			width 100%
+			ul
+				width 100%
+		.barra_top
+			display none
+@media (max-width:568px)
+	.banner_inferior
+		content url('../img/frase568x175.png')
+@media (max-width:480px)
+	.banner_inferior
+		content url('../img/frase480x150.png')
+@media (max-width:320px)
+	.banner_inferior
+		content url('../img/frase320x100.png')

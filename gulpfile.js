@@ -9,6 +9,7 @@ var buffer = require('vinyl-buffer');
 var uglify = require('gulp-uglify');
 var smoosher = require('gulp-smoosher');
 var imageop = require('gulp-image-optimization');
+var jade = require('gulp-jade');
 
 var config = {
   styles: {
@@ -17,7 +18,11 @@ var config = {
     output: './build/css'
   },
   html: {
-    watch: './build/*.html'
+    watch: ['./build/*.html','./build/jade/**/*.jade']
+  },
+  templates:{
+    watch: './build/jade/**/*.jade',
+    output: './build/'
   },
   scripts: {
     main: './src/scripts/main.js',
@@ -58,10 +63,21 @@ gulp.task('build:js', function() {
     .pipe(gulp.dest(config.scripts.output));
 });
 
+
+gulp.task('build:jade', function() {
+  var YOUR_LOCALS = {};
+  gulp.src(config.templates.watch)
+    .pipe(jade({
+      locals: YOUR_LOCALS
+    }))
+    .pipe(gulp.dest(config.templates.output))
+});
+
 gulp.task('watch', function() {
   gulp.watch(config.images.watch, ['images']);
   gulp.watch(config.scripts.watch, ['build:js']);
   gulp.watch(config.styles.watch, ['build:css']);
+  gulp.watch(config.templates.watch, ['build:jade'])
   gulp.watch(config.html.watch, ['build']);
 });
 
@@ -81,7 +97,7 @@ gulp.task('inline', function() {
     .pipe(gulp.dest('./dist'));
 });
 
-gulp.task('build', ['build:css', 'build:js', 'inline']);
+gulp.task('build', ['build:css', 'build:js','inline']);
 //gulp.task('build', ['build:css', 'build:js', 'images', 'inline']);
 
 gulp.task('default', ['server', 'watch', 'build']);

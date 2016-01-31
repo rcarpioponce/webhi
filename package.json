@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Renzo Carpio <cazaustre@gmail.com> (https://renzocarpio.com)",
+  "author": "Renzo Carpio <me@renzocarpio.com> (https://renzocarpio.com)",
   "license": "ISC",
   "devDependencies": {
     "browserify": "^12.0.1",
@@ -17,7 +17,7 @@
     "gulp-stylus": "^2.1.0",
     "gulp-uglify": "^1.4.2",
     "gulp-webserver": "^0.9.1",
-    "jade": "^1.11.0",
+    "gulp-jade": "^1.1.0",
     "nib": "^1.1.0",
     "vinyl-buffer": "^1.0.0",
     "vinyl-source-stream": "^1.1.0"
