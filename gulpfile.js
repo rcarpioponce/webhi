@@ -74,7 +74,7 @@ gulp.task('build:jade', function() {
 });
 
 gulp.task('watch', function() {
-  gulp.watch(config.images.watch, ['images']);
+  //gulp.watch(config.images.watch, ['images']);
   gulp.watch(config.scripts.watch, ['build:js']);
   gulp.watch(config.styles.watch, ['build:css']);
   gulp.watch(config.templates.watch, ['build:jade'])
