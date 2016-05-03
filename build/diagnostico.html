@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+</head>
+<body>
+	<div class="container">
+		<form>
+			<h1>Formulario de Diagnostico</h1>
+			<div class="form-group">
+				<div class="row">
+					<div class="col-lg-6">	
+						<label>Empresa</label>
+						<input type="text" name="empresa" id="empresa" class="form-control">
+					</div>
+					<div class="col-lg-6">	
+						<label>RUC</label>
+						<input type="text" name="ruc" id="ruc" class="form-control">
+					</div>					
+				</div>
+			</div>
+			<div class="form-group">
+				<div class="row">
+					<div class="col-lg-6">	
+						<label>Email de contacto</label>
+						<input type="text" name="email_contacto" id="email_contacto" class="form-control">
+					</div>
+					<div class="col-lg-6">	
+						<label>Teléfono de contacto</label>
+						<input type="text" name="telefono_contacto" id="telefono_contacto" class="form-control">
+					</div>					
+				</div>
+			</div>
+			<div class="form-group">
+				<label>Nombres y Apellidos</label>
+				<input type="text" name="nombres_apellidos" id="nombres_apellidos" class="form-control">
+			</div>
+			<hr>
+			<h2>Pregunta 1</h2>
+			<div class="form-group">
+				<label>Nos podría describir su empresa (breve reseña)</label>
+				<textarea class="form-control"></textarea>
+			</div>
+			<div class="form-group">
+				<label>Rubro</label>
+				<input type="text" name="rubro" id="rubro" class="form-control">
+			</div>
+			<div class="form-group">
+				<label>Productos / Servicios</label>
+				<textarea class="form-control"></textarea>
+			</div>
+			<div class="form-group">
+				<label>Mercado al que va dirigido</label>
+				<input type="text" name="mercado" id="mercado" class="form-control">
+			</div>
+			<div class="form-group">
+				<label>N° de trabajadores</label>
+				<input type="text" name="nro_trabajadores" id="nro_trabajadores" class="form-control">
+			</div>
+			<div class="form-group">
+				<label>Facturación mensual promedio</label>
+				<input type="text" name="facturacion_promedio" id="facturacion_promedio" class="form-control">
+			</div>
+			<hr>
+			<h2>Pregunta 2</h2>
+			<div class="form-group">
+				<label>Nombre tres elementos clave que lo diferencian de su competencia</label>
+				<textarea class="form-control"></textarea>
+			</div>
+			<hr>
+			<h2>Pregunta 3 (FINANZAS)</h2>
+			<div class="form-group">
+				<label>1. ¿Cuenta con un presupuesto anual de la empresa?</label>
+				<select class="form-control">
+					<option value="S">Sí</option>
+					<option value="N">No</option>
+				</select>
+			</div>
+			<div class="form-group">
+				<label>2. ¿Ha realizado una investigación de (los) mercado(s) en lo que se desenvuelve su empresa?</label>
+				<select class="form-control">
+					<option value="S">Sí</option>
+					<option value="N">No</option>
+				</select>
+			</div>
+			<div class="form-group">
+				<label>3. ¿Conoce la rentabilidad de cada uno de sus productos?</label>
+				<select class="form-control">
+					<option value="S">Sí</option>
+					<option value="N">No</option>
+				</select>
+			</div>			
+			<div class="form-group">
+				<label>4. ¿Cuenta con el Flujo de caja proyectado de su empresa para el corto y mediano plazo?</label>
+				<select class="form-control">
+					<option value="S">Sí</option>
+					<option value="N">No</option>
+				</select>
+			</div>
+			<div class="form-group">
+				<label>5. ¿Cuenta con lineas de credito que le permita un apalancamiento financiero?</label>
+				<select class="form-control">
+					<option value="S">Sí</option>
+					<option value="N">No</option>
+				</select>
+			</div>
+			<hr>
+			<h2>Pregunta 4 (MARKETING Y VENTAS)</h2>
+			<div class="form-group">
+				<label>1. ¿Cuenta con un presupuesto anual de la empresa?1. ¿Posee su empresa un plan de Marketing anual?</label>
+				<select class="form-control">
+					<option value="S">Sí</option>
+					<option value="N">No</option>
+				</select>
+			</div>
+			<div class="form-group">
+				<label>2. ¿Ha realizado una investigación de (los) mercado(s) en lo que se desenvuelve su empresa?</label>
+				<select class="form-control">
+					<option value="S">Sí</option>
+					<option value="N">No</option>
+				</select>
+			</div>
+			<div class="form-group">
+				<label>3. ¿Tiene un manual del correcto manejo de su marca? (Logo / slogan)</label>
+				<select class="form-control">
+					<option value="S">Sí</option>
+					<option value="N">No</option>
+				</select>
+			</div>			
+			<div class="form-group">
+				<label>4. ¿Posee una metodología de cálculo de precios? (cotizador/estrategia de precios)</label>
+				<select class="form-control">
+					<option value="S">Sí</option>
+					<option value="N">No</option>
+				</select>
+			</div>
+			<div class="form-group">
+				<label>5. ¿Utiliza el internet como medio de comunicación o ventas?</label>
+				<select class="form-control">
+					<option value="S">Sí</option>
+					<option value="N">No</option>
+				</select>
+			</div>
+			<hr>
+			<h2>Pregunta 5 (OPERACIONES)</h2>
+			<div class="form-group">
+				<label>1. ¿Cuenta con indicadores de gestión de sus operaciones?</label>
+				<select class="form-control">
+					<option value="S">Sí</option>
+					<option value="N">No</option>
+				</select>
+			</div>
+			<div class="form-group">
+				<label>2. ¿Tiene procesos definidos y documentados?</label>
+				<select class="form-control">
+					<option value="S">Sí</option>
+					<option value="N">No</option>
+				</select>
+			</div>
+			<div class="form-group">
+				<label>3. ¿Cuenta su empresa con certificaciones de calidad?</label>
+				<select class="form-control">
+					<option value="S">Sí</option>
+					<option value="N">No</option>
+				</select>
+			</div>			
+			<div class="form-group">
+				<label>4. ¿Posee un manejo eficiente de los costos operativos?</label>
+				<select class="form-control">
+					<option value="S">Sí</option>
+					<option value="N">No</option>
+				</select>
+			</div>
+			<hr>
+			<h2>Pregunta 6 (DISEÑO ORGANIZACIONAL)</h2>
+			<div class="form-group">
+				<label>1. ¿Posee funciones y responsabilidades definidas por puesto de trabajo?</label>
+				<select class="form-control">
+					<option value="S">Sí</option>
+					<option value="N">No</option>
+				</select>
+			</div>
+			<div class="form-group">
+				<label>2. ¿Posee procedimientos de selección, reclutamiento, inducción y evaluación definidos?</label>
+				<select class="form-control">
+					<option value="S">Sí</option>
+					<option value="N">No</option>
+				</select>
+			</div>
+			<div class="form-group">
+				<label>3. ¿Cuenta con comités y reuniones de seguimiento de la gestión de sus trabajadores?</label>
+				<select class="form-control">
+					<option value="S">Sí</option>
+					<option value="N">No</option>
+				</select>
+			</div>			
+			<div class="form-group">
+				<label>4. ¿Sus trabajadores claves cuentan con una línea de carrera definida?</label>
+				<select class="form-control">
+					<option value="S">Sí</option>
+					<option value="N">No</option>
+				</select>
+			</div>
+			<hr>
+			<h2>Pregunta 7 (LEGAL)</h2>
+			<div class="form-group">
+				<label>1. ¿Cuenta con un Sistema de Seguridad y Salud en el Trabajo y cumple los programas?</label>
+				<select class="form-control">
+					<option value="S">Sí</option>
+					<option value="N">No</option>
+				</select>
+			</div>
+			<div class="form-group">
+				<label>2. ¿Sus relaciones comeriales se plasman en contratos o documentos legales?</label>
+				<select class="form-control">
+					<option value="S">Sí</option>
+					<option value="N">No</option>
+				</select>
+			</div>
+			<div class="form-group">
+				<label>3. ¿Posee una estrategia de contratación laboral?</label>
+				<select class="form-control">
+					<option value="S">Sí</option>
+					<option value="N">No</option>
+				</select>
+			</div>			
+			<div class="form-group">
+				<label>4. ¿Maneja una estrategia tributaria?</label>
+				<select class="form-control">
+					<option value="S">Sí</option>
+					<option value="N">No</option>
+				</select>
+			</div>
+			<div class="form-group">
+				<label>5. ¿Sus trabajadores tienen contratos laborales conforme a la Ley?</label>
+				<select class="form-control">
+					<option value="S">Sí</option>
+					<option value="N">No</option>
+				</select>
+			</div>									
+		</form>
+	</div>
+</body>
+</html>
