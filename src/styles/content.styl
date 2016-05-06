@@ -33,7 +33,7 @@
         width 100%
 figure
   margin 5px 28px
-h2
+h2.clientes
   width 90.25%
   text-align center
   font-family 'ClanOT-Bold'
@@ -41,7 +41,23 @@ h2
   background-color $amarillo
   color $black
   margin-top 40px
-  padding 5px 0 
+  padding 5px 0
+ul.cuadros_amarillos
+  list-style none
+  margin-top 40px
+  li
+    font-size 20px
+    padding-bottom 15px
+    &::before
+      width 12px
+      height 12px
+      margin-top 2px
+      background-color $amarillo
+      float left
+      clear none
+      position relative
+      margin-right 20px
+      content " "
 #servicios
   width 100%
   max-width 100%
